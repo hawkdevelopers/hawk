@@ -77,6 +77,7 @@ const Social = () => {
             target="_blank"
             rel="nofollow"
             href={card.link}
+            aria-label="Redes Sociais"
           >
             {card.svg}
           </motion.a>
