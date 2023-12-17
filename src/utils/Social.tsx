@@ -55,15 +55,14 @@ const Social = () => {
 
   return (
     <motion.ul
-      role="menubar"
+      role="list"
       variants={StaggeredContainer}
       initial="hidden"
       animate="visible"
     >
       {SocialLink.map((card, index) => (
-        <li role="menuitem" key={index}>
+        <li role="listitem" key={index}>
           <motion.a
-            role="link"
             variants={StaggeredItem}
             animate={{ opacity: 1 }}
             whileHover={{
