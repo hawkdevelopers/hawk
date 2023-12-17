@@ -25,9 +25,11 @@ const HeroArticle = () => {
         <motion.h1 role="heading">
           Ei, me chamo Diego<span>.</span>
         </motion.h1>
-        <motion.h2>
-          Desenvolvedor Full Stack<span>.</span>
-        </motion.h2>
+        <div id="typing">
+          <motion.h2>
+            Desenvolvedor Full Stack<span>.</span>
+          </motion.h2>
+        </div>
         <motion.p>
           Passei os últimos 5 anos construindo e dimensionando software para
           algumas empresas muito legais. Eu também ensino pessoas a pintar
