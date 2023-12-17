@@ -203,10 +203,13 @@ const CustomButton = () => {
       animate={{
         opacity: 1,
         y: 0,
+        transition: {
+          delay: 0.5,
+          duration: 0.8,
+        },
       }}
-      transition={{
-        delay: 0.5,
-        duration: 0.8,
+      whileHover={{
+        scale: 0.9,
       }}
       ref={ref}
       role="button"

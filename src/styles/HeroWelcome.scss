@@ -5,6 +5,7 @@
 main.hero-article {
   display: inline-flex;
   width: 100%;
+  overflow: hidden;
   & > article {
     display: inline-flex;
     width: 100%;
@@ -37,7 +38,6 @@ main.hero-article {
       }
     }
     p {
-      font-size: 1.8rem;
       font-weight: 200;
       max-width: 600px;
     }

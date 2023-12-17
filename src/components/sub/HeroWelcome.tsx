@@ -14,8 +14,8 @@ const HeroArticle = () => {
         opacity: 1,
       }}
       transition={{
-        delay: 0.5,
-        duration: 0.8,
+        delay: 0.8,
+        duration: 1,
       }}
       viewport={{ once: true }}
       role="main"
