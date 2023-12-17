@@ -61,26 +61,27 @@ const Social = () => {
       animate="visible"
     >
       {SocialLink.map((card, index) => (
-        <motion.a
-          role="link"
-          variants={StaggeredItem}
-          animate={{ opacity: 1 }}
-          whileHover={{
-            fill: "#0aff9d",
-            transition: {
-              ease: "backInOut",
-            },
-          }}
-          key={index}
-          style={{
-            fill: "#ebecf3",
-          }}
-          target="_blank"
-          rel="nofollow"
-          href={card.link}
-        >
-          <li role="menuitem"> {card.svg}</li>
-        </motion.a>
+        <li role="menuitem" key={index}>
+          <motion.a
+            role="link"
+            variants={StaggeredItem}
+            animate={{ opacity: 1 }}
+            whileHover={{
+              fill: "#0aff9d",
+              transition: {
+                ease: "backInOut",
+              },
+            }}
+            style={{
+              fill: "#ebecf3",
+            }}
+            target="_blank"
+            rel="nofollow"
+            href={card.link}
+          >
+            {card.svg}
+          </motion.a>
+        </li>
       ))}
     </motion.ul>
   );
