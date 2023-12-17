@@ -66,10 +66,10 @@ ul.social-media {
   grid-template-columns: 1fr 1fr 1fr;
   align-content: center;
   height: 100%;
-  a {
+  li {
     display: grid;
     margin-right: 0.938rem;
-    li {
+    a {
       display: inline-block;
       svg {
         display: block;

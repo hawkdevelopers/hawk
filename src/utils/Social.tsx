@@ -56,15 +56,13 @@ const Social = () => {
       className="social-media"
     >
       {SocialLink.map((card, index) => (
-        <motion.a
-          target="_blank"
-          rel="nofollow"
-          href={card.link}
-          aria-label="Redes Sociais"
-          key={index}
-        >
-          <motion.li
-            role="listitem"
+        <motion.li role="listitem" key={index}>
+          <motion.a
+            target="_blank"
+            rel="nofollow"
+            href={card.link}
+            aria-label="Redes Sociais"
+            role="link"
             variants={StaggeredItem}
             animate={{ opacity: 1 }}
             whileHover={{
@@ -78,8 +76,8 @@ const Social = () => {
             }}
           >
             {card.svg}
-          </motion.li>
-        </motion.a>
+          </motion.a>
+        </motion.li>
       ))}
     </motion.ul>
   );
