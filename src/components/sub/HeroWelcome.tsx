@@ -12,10 +12,10 @@ const HeroArticle = () => {
       }}
       whileInView={{
         opacity: 1,
-      }}
-      transition={{
-        delay: 0.8,
-        duration: 1,
+        transition: {
+          delay: 1,
+          duration: 1.5,
+        },
       }}
       viewport={{ once: true }}
       role="main"
