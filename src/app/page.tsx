@@ -3,9 +3,11 @@ import React from "react";
 
 const page = () => {
   return (
-    <>
+    <main style={{
+      display: "flex"
+    }}>
       <Hero />
-    </>
+    </main>
   );
 };
 

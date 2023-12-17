@@ -1,4 +1,7 @@
 section.hero {
+  display: inline-flex;
+  flex-direction: column;
   max-width: 1245px;
   margin: auto;
+  gap: 2.5rem;
 }
