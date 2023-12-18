@@ -1,12 +1,25 @@
 import React from "react";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const Logo = () => {
   return (
-    <h1 role="heading" className="logo">
+    <motion.h1
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: {
+          delay: 0.5,
+          duration: 0.8,
+        },
+      }}
+      role="heading"
+      className="logo"
+    >
       <a href="#" role="link">
         Hawk <span>.</span>
       </a>
-    </h1>
+    </motion.h1>
   );
 };
 
