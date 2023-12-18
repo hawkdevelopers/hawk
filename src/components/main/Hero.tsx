@@ -8,6 +8,7 @@ const Hero = () => {
   return (
     <section role="main" className="hero">
       <HeroWelcome />
+
       <HeroAbout />
     </section>
   );

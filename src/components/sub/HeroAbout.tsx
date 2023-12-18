@@ -1,6 +1,6 @@
 import React from "react";
 // Framer motion
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 // Custom Style
 import "@/styles/HeroAbout.scss";
 
@@ -8,6 +8,15 @@ import Image from "next/image";
 import Social from "@/utils/Social";
 
 const HeroAbout = () => {
+  const ref = React.useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "center center"],
+  });
+
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
+
   return (
     <motion.main
       initial={{
@@ -26,17 +35,9 @@ const HeroAbout = () => {
     >
       <section>
         <motion.section
-          initial={{
-            opacity: 0,
-            scale: 0,
-          }}
-          animate={{
-            opacity: 1,
-            scale: 1,
-            transition: {
-              delay: 1.5,
-              duration: 1,
-            },
+          style={{
+            scale: scaleProgress,
+            opacity: opacityProgress,
           }}
         >
           <div className="about-image" />
