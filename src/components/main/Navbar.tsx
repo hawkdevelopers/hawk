@@ -11,7 +11,6 @@ import Social from "@/utils/Social";
 const Navbar = () => {
   return (
     <motion.header
-      role="banner"
       className="navigation"
       initial={{
         opacity: 0,
@@ -25,14 +24,14 @@ const Navbar = () => {
       }}
       viewport={{ once: true }}
     >
-      <div>
-        <div>
+      <section>
+        <section>
           <Logo />
-        </div>
+        </section>
         <nav role="navigation">
           <Social />
         </nav>
-      </div>
+      </section>
     </motion.header>
   );
 };

@@ -55,7 +55,7 @@ main.hero-about section {
         margin-right: 0.938rem;
       }
       & > span:nth-child(2) {
-        margin-right: auto;
+        margin-left: auto;
       }
     }
   }
@@ -76,12 +76,6 @@ main.hero-about section {
       p {
         font-size: 1.5rem;
         line-height: 25px;
-      }
-      section {
-        & > span:nth-child(2) {
-          margin-right: 0;
-          margin-left: auto;
-        }
       }
     }
   }

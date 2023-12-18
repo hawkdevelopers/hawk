@@ -4,24 +4,33 @@ header.navigation {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #03001417;
+
   z-index: 50;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  overflow: hidden;
 }
 
-.navigation div {
+.navigation section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1245px;
   height: 100%;
-  margin: auto;
-  & > div {
-    margin-left: 0;
+
+  & > section {
+    margin-right: auto;
   }
   nav {
     margin-left: auto;
+  }
+}
+
+// Media Queries
+@media screen and (max-width: 1024px) {
+  header.navigation {
+    & > section:nth-child(1) {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+    }
   }
 }

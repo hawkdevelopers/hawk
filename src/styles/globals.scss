@@ -18,8 +18,10 @@ html {
 // Media Queries
 @media screen and (max-width: 1024px) {
   body {
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
+    section.size {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+    }
   }
 }
 
@@ -62,13 +64,12 @@ menu {
 }
 
 ul.social-media {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-content: center;
+  display: flex;
+  justify-content: space-between;
   height: 100%;
+  gap: 0.938rem;
   li {
     display: grid;
-    margin-right: 0.938rem;
     a {
       display: inline-block;
       svg {
