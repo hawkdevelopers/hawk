@@ -1,10 +1,25 @@
 import React from "react";
 //Framer motion
-import { motion } from "framer-motion";
+import { AnimationProps, motion } from "framer-motion";
 import "@/styles/HeroWelcome.scss";
 import CustomButton from "@/utils/CustomButton";
 
 const HeroArticle = () => {
+  const mainPathVariant: AnimationProps = {
+    transition: {
+      duration: 4,
+      ease: "easeInOut",
+    },
+    variants: {
+      visible: {
+        pathLength: 1,
+      },
+      hidden: {
+        pathLength: 0,
+      },
+    },
+  };
+
   return (
     <motion.main
       initial={{
@@ -35,8 +50,10 @@ const HeroArticle = () => {
           algumas empresas muito legais. Eu também ensino pessoas a pintar
           online (caso você tenha uma tela vazia por aí 🎨). Vamos nos conectar!
         </motion.p>
+
         <CustomButton />
       </article>
+      <div></div>
     </motion.main>
   );
 };

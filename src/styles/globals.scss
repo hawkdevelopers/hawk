@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+
   font-size: 62.5%;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -68,11 +69,13 @@ ul.social-media {
   justify-content: space-between;
   height: 100%;
   gap: 0.938rem;
+
   li {
     display: grid;
 
     a {
       display: inline-block;
+
       svg {
         display: block;
         margin: 0;
@@ -91,6 +94,7 @@ ul.social-media {
   line-height: 1;
   font-size: var(--font-size-md);
   margin-right: auto;
+
   a {
     span {
       color: var(--secondary-color);
@@ -99,7 +103,7 @@ ul.social-media {
 }
 
 h2.section-text {
-  & > span {
+  &>span {
     color: #0aff9d;
   }
 }
