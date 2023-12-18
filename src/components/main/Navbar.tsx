@@ -12,17 +12,7 @@ const Navbar = () => {
   return (
     <motion.header
       className="navigation"
-      initial={{
-        opacity: 0,
-      }}
-      whileInView={{
-        opacity: 1,
-      }}
-      transition={{
-        delay: 0.25,
-        duration: 0.5,
-      }}
-      viewport={{ once: true }}
+
     >
       <section>
         <section>
