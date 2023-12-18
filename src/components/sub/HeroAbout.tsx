@@ -11,11 +11,11 @@ const HeroAbout = () => {
   const ref = React.useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center center"],
+    offset: ["0 1", "1 1"],
   });
 
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
 
   return (
     <motion.main
