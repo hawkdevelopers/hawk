@@ -121,7 +121,7 @@ const HeroProject = () => {
               </article>
             </main>
             <main className="card-footer">
-              <a href="">
+              <a href="#">
                 <span>
                   Visualizar <Eye size={20} />
                 </span>
