@@ -17,11 +17,10 @@ const Logo = () => {
       className="logo"
     >
       <a href="#" role="link">
-        Hawk <span>.</span>
+        Hawk<span>.</span>
       </a>
     </motion.h1>
   );
 };
-
 
 export default Logo;
