@@ -11,8 +11,9 @@ export const metadata: Metadata = {
   title: "Hawk // Portfolio",
   description: "Seja Bem Vindo Desenvolvedor(a). <3",
   openGraph: {
-    images: "/public/about-me.webp",
-    title: "Hawk // Portfolio",
+    images:
+      "https://ipfs.io/ipfs/QmVcYXVwXNNjrwPcrEeRxyJDLgBsTDUPDCKGCQBKazLmUo",
+    title: "Hawk // Developer Portfolio",
     description: "Seja Bem Vindo Desenvolvedor(a). <3",
   },
   robots: {
