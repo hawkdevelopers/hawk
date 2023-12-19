@@ -6,9 +6,11 @@ import HeroAbout from "@/components/sub/HeroAbout";
 import HeroProject from "../sub/HeroProject";
 import { onLCP, onFID, onCLS } from "web-vitals";
 const Hero = () => {
-  onCLS(console.log);
-  onFID(console.log);
-  onLCP(console.log);
+  React.useEffect(() => {
+    onCLS(console.log);
+    onFID(console.log);
+    onLCP(console.log);
+  }, []);
 
   return (
     <section role="main" className="hero">
@@ -16,6 +18,7 @@ const Hero = () => {
       <HeroAbout />
       <HeroProject />
     </section>
+    
   );
 };
 
