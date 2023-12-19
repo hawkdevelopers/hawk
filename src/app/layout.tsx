@@ -9,7 +9,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Hawk // Portfolio",
-  description: "Seja Bem Vindo Desenvolvedor",
+  description: "Seja Bem Vindo Desenvolvedor. <3",
+  openGraph: {
+    images: "/about-me.webp",
+    title: "Hawk // Portfolio",
+    description: "Seja Bem Vindo Desenvolvedor. <3",
+  },
   robots: {
     index: true,
     follow: true,
