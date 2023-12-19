@@ -13,7 +13,7 @@ const CustomButton = () => {
   const createSVG = (
     width: number,
     height: number,
-    childType: any,
+    childType: string,
     childAttributes: any,
     className?: string
   ) => {
@@ -163,7 +163,7 @@ const CustomButton = () => {
           ],
         });
 
-        button.addEventListener("pointerenter", () => {
+        button.addEventListener("mouseenter", () => {
           gsap.to(button, {
             "--generate-button-dots-opacity": ".5",
             duration: 0.25,
@@ -174,7 +174,7 @@ const CustomButton = () => {
           });
         });
 
-        button.addEventListener("pointerleave", () => {
+        button.addEventListener("mouseleave", () => {
           gsap.to(button, {
             "--generate-button-dots-opacity": "0",
             "--generate-button-star-1-opacity": ".25",
