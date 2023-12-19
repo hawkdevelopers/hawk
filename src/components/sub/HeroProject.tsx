@@ -104,7 +104,12 @@ const HeroProject = () => {
     >
       <SectionText text="Projetos" />
 
-      <motion.section {...mainStagger} initial="hidden" whileInView="visible">
+      <motion.section
+        {...mainStagger}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         {Project.map((card, index) => (
           <motion.section key={index} className="card" {...childStagger}>
             <main className="card-header card-hue" />
