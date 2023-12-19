@@ -1,13 +1,9 @@
 import React from "react";
 //Framer motion
-import {
-  AnimationProps,
-  motion,
-  useInView,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import { AnimationProps, motion } from "framer-motion";
+//Custom Style
 import "@/styles/HeroWelcome.scss";
+// Custom Button
 import CustomButton from "@/utils/CustomButton";
 
 const HeroArticle = () => {
@@ -25,21 +21,9 @@ const HeroArticle = () => {
       },
     },
   };
-  const ref = React.useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "center"],
-  });
-
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
 
   return (
     <motion.main
-      ref={ref}
       initial={{
         opacity: 0,
       }}
@@ -54,12 +38,7 @@ const HeroArticle = () => {
       role="main"
       className="hero-article"
     >
-      <motion.article
-        role="article"
-        style={{
-          y: backgroundY,
-        }}
-      >
+      <motion.article role="article">
         <motion.h1 role="heading">
           Ei, me chamo Diego<span>.</span>
         </motion.h1>

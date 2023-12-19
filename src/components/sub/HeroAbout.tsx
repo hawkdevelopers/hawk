@@ -1,6 +1,12 @@
 import React from "react";
 // Framer motion
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import {
+  AnimationProps,
+  motion,
+  useInView,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 // Custom Style
 import "@/styles/HeroAbout.scss";
 
@@ -16,14 +22,9 @@ const HeroAbout = () => {
   });
 
   const opacity = useTransform(scrollYProgress, [1, 0], [1, 0]);
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
 
   return (
-    <motion.main
-      style={{
-        y: backgroundY,
-      }}
-    >
+    <motion.main>
       <motion.section
         ref={ref}
         initial={{
@@ -38,13 +39,10 @@ const HeroAbout = () => {
         }}
         viewport={{ once: true }}
         className="hero-about"
-        style={{
-          position: "relative",
-        }}
       >
         <motion.section
           style={{
-            opacity: opacity,
+            opacity,
           }}
         >
           <motion.section>
