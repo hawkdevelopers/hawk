@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Hawk // Portfolio",
   description: "Seja Bem Vindo Desenvolvedor(a). <3",
   openGraph: {
-    images: "/about-me.webp",
+    images: "/public/about-me.webp",
     title: "Hawk // Portfolio",
     description: "Seja Bem Vindo Desenvolvedor(a). <3",
   },
