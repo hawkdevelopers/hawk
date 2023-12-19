@@ -9,6 +9,7 @@ import {
   scroll,
   useTransform,
   animate,
+  AnimationProps,
 } from "framer-motion";
 // Custom Style
 import "@/styles/HeroProject.scss";
@@ -51,11 +52,40 @@ const HeroProject = () => {
     {
       name: "Carrot DAO",
       description:
-        "Carrot DAO é um sistema de governança descentralizada que capacita os detentores de tokens a tomar decisões sobre o ecossistema. Baseado na participação dos holders, permite votações e propostas para orientar o desenvolvimento, atualizações e a direção futura do protocolo, promovendo a transparência e a autonomia na gestão de decisões-chave.",
+        "Carrot DAO é um sistema de governança descentralizada que capacita os detentores de tokens a tomar decisões sobre o ecossistema. Permite votações e propostas para orientar o desenvolvimento, promovendo a transparência e a autonomia na gestão de decisões-chave.",
       src: "/carrot-dao.webp",
       language: ["NextJs", "Tailwind", "EtherJs", "Sass"],
     },
   ];
+
+  const mainStagger: AnimationProps = {
+    variants: {
+      visible: {
+        opacity: 1,
+
+        transition: {
+          delay: 0.5,
+          duration: 0.5,
+          staggerChildren: 0.8,
+          delayChildren: 1.5,
+          ease: "linear",
+        },
+      },
+      hidden: {
+        opacity: 0,
+      },
+    },
+  };
+
+  const childStagger: AnimationProps = {
+    variants: {
+      visible: { opacity: 1, y: 0 },
+      hidden: {
+        opacity: 0,
+        y: 100,
+      },
+    },
+  };
 
   return (
     <motion.main
@@ -74,15 +104,14 @@ const HeroProject = () => {
     >
       <SectionText text="Projetos" />
 
-      <motion.section>
+      <motion.section {...mainStagger} initial="hidden" whileInView="visible">
         {Project.map((card, index) => (
-          <motion.section key={index} className="card">
+          <motion.section key={index} className="card" {...childStagger}>
             <main className="card-header card-hue" />
             <main
               className="card-image"
               style={{
                 backgroundImage: `linear-gradient(to bottom, transparent, #1d1d1d), url(${card.src})`,
-         
               }}
             />
             <main className="card-body">
