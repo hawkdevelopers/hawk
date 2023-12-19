@@ -27,10 +27,10 @@ const HeroAbout = () => {
       <motion.section
         ref={ref}
         initial={{
-          opacity: 0,
+          scale: 0,
         }}
         whileInView={{
-          opacity: 1,
+          scale: 1,
           transition: {
             delay: 1.2,
             duration: 1.5,
