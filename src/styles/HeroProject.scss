@@ -55,6 +55,9 @@ main.hero-project {
                 background-position: center;
                 background-size: cover;
                 overflow: hidden;
+                content-visibility: auto;
+                image-rendering: crisp-edges;
+                image-resolution: 300dpi;
             }
 
             .card-body {

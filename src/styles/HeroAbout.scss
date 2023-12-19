@@ -25,7 +25,11 @@ main section.hero-about section {
 
     .about-image {
       width: 47%;
+
       background: url("/about-me.webp");
+      content-visibility: auto;
+      image-rendering: crisp-edges;
+      image-resolution: 300dpi;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
