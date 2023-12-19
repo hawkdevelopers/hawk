@@ -9,6 +9,11 @@ const Hero = () => {
     <section role="main" className="hero">
       <HeroWelcome />
       <HeroAbout />
+      <div
+        style={{
+          minHeight: "100vh",
+        }}
+      />
     </section>
   );
 };

@@ -1,6 +1,12 @@
 import React from "react";
 //Framer motion
-import { AnimationProps, motion } from "framer-motion";
+import {
+  AnimationProps,
+  motion,
+  useInView,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import "@/styles/HeroWelcome.scss";
 import CustomButton from "@/utils/CustomButton";
 
@@ -19,9 +25,21 @@ const HeroArticle = () => {
       },
     },
   };
+  const ref = React.useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "center"],
+  });
+
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
 
   return (
     <motion.main
+      ref={ref}
       initial={{
         opacity: 0,
       }}
@@ -36,7 +54,12 @@ const HeroArticle = () => {
       role="main"
       className="hero-article"
     >
-      <article role="article">
+      <motion.article
+        role="article"
+        style={{
+          y: backgroundY,
+        }}
+      >
         <motion.h1 role="heading">
           Ei, me chamo Diego<span>.</span>
         </motion.h1>
@@ -52,8 +75,7 @@ const HeroArticle = () => {
         </motion.p>
 
         <CustomButton />
-      </article>
-      <div></div>
+      </motion.article>
     </motion.main>
   );
 };

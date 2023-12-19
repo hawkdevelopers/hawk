@@ -1,11 +1,12 @@
-main.hero-about {
+main section.hero-about {
   display: inline-flex;
+  flex-direction: column;
   width: 100%;
-  overflow: hidden;
+
   margin-top: 5rem;
 }
 
-main.hero-about section {
+main section.hero-about section {
   display: block;
   width: 100%;
 
@@ -80,7 +81,7 @@ main.hero-about section {
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {
-  main.hero-about section {
+  main section.hero-about section {
     section {
       .about-image {
         width: 100%;
