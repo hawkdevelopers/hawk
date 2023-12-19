@@ -5,7 +5,6 @@ import Navbar from "@/components/main/Navbar";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,8 +17,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
- 
-
   return (
     <html lang="pt-br" suppressHydrationWarning>
       <body cz-shortcut-listen="true" className={inter.className}>
