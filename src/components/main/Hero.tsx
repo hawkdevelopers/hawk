@@ -11,11 +11,6 @@ const Hero = () => {
       <HeroWelcome />
       <HeroAbout />
       <HeroProject />
-      <div
-        style={{
-          minHeight: "100vh",
-        }}
-      />
     </section>
   );
 };

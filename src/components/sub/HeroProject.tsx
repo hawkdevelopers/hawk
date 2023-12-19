@@ -1,31 +1,16 @@
 import React from "react";
 // Framer Motion
-import {
-  motion,
-  useMotionValue,
-  useMotionValueEvent,
-  useScroll,
-  useSpring,
-  scroll,
-  useTransform,
-  animate,
-  AnimationProps,
-} from "framer-motion";
+import { motion, AnimationProps } from "framer-motion";
 // Custom Style
 import "@/styles/HeroProject.scss";
+// Custom Text
 import SectionText from "@/utils/SectionText";
+// Image
 import Image from "next/image";
+// Icon SVG
 import { Eye } from "lucide-react";
+
 const HeroProject = () => {
-  const ref = React.useRef<HTMLDivElement>(null);
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["end end", "center"],
-  });
-
-  const backgroundY = useTransform(scrollYProgress, [1, 0], ["0%", "0%"]);
-
   const Project = [
     {
       name: "Stone Defi",

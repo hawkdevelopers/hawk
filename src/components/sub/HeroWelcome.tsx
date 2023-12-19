@@ -7,21 +7,6 @@ import "@/styles/HeroWelcome.scss";
 import CustomButton from "@/utils/CustomButton";
 
 const HeroArticle = () => {
-  const mainPathVariant: AnimationProps = {
-    transition: {
-      duration: 4,
-      ease: "easeInOut",
-    },
-    variants: {
-      visible: {
-        pathLength: 1,
-      },
-      hidden: {
-        pathLength: 0,
-      },
-    },
-  };
-
   return (
     <motion.main
       initial={{
@@ -35,7 +20,6 @@ const HeroArticle = () => {
         },
       }}
       viewport={{ once: true }}
-      role="main"
       className="hero-article"
     >
       <motion.article role="article">

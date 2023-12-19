@@ -1,21 +1,15 @@
 import React from "react";
 // Framer motion
-import {
-  AnimationProps,
-  motion,
-  useInView,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 // Custom Style
 import "@/styles/HeroAbout.scss";
 
-import Image from "next/image";
+// Social Media
 import Social from "@/utils/Social";
 
 const HeroAbout = () => {
   const ref = React.useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref);
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "center"],
