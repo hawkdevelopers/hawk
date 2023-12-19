@@ -114,6 +114,13 @@ const HeroProject = () => {
                 backgroundImage: `linear-gradient(to bottom, transparent, #1d1d1d), url(${card.src})`,
               }}
             />
+            <Image
+              width="0"
+              height="0"
+              sizes="600"
+              src={card.src}
+              alt={card.name}
+            />
             <main className="card-body">
               <article>
                 <h1>{card.name}</h1>
