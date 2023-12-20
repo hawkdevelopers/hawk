@@ -47,6 +47,8 @@ const HeroAbout = () => {
               sizes="100vw"
               src="/about-me.webp"
               alt="About-me"
+              loading="eager"
+              priority
               className="about-image"
             />
             <article>
