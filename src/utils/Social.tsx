@@ -44,7 +44,7 @@ const Social = () => {
       ),
     },
     {
-      link: "https://www.linkedin.com/in/diego-vinicius-66053a1a3/",
+      link: "https://www.instagram.com/srvinirox.eth/",
       svg: (
         <motion.svg
           viewBox="0 0 16 16"

@@ -41,10 +41,10 @@ const HeroAbout = () => {
           }}
         >
           <motion.section>
-       
             <Image
-              width={540}
-              height={500}
+              width={0}
+              height={0}
+              sizes="100vw"
               src="/about-me.webp"
               alt="About-me"
               className="about-image"

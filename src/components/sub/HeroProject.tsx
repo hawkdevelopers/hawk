@@ -114,13 +114,13 @@ const HeroProject = () => {
                 <p>{card.description}</p>
               </article>
             </main>
-            <main className="card-footer">
+            {/* <main className="card-footer">
               <a href="#">
                 <span>
                   Visualizar <Eye size={20} />
                 </span>
               </a>
-            </main>
+            </main> */}
           </motion.section>
         ))}
       </motion.section>
