@@ -6,6 +6,7 @@ import "@/styles/HeroAbout.scss";
 
 // Social Media
 import Social from "@/utils/Social";
+import Image from "next/image";
 
 const HeroAbout = () => {
   const ref = React.useRef<HTMLDivElement>(null);
@@ -40,7 +41,14 @@ const HeroAbout = () => {
           }}
         >
           <motion.section>
-            <motion.div className="about-image" />
+       
+            <Image
+              width={540}
+              height={500}
+              src="/about-me.webp"
+              alt="About-me"
+              className="about-image"
+            />
             <article>
               <h1>Quem sou</h1>
               <h2>Diego Vinicius</h2>

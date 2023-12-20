@@ -98,7 +98,7 @@ const HeroProject = () => {
         {Project.map((card, index) => (
           <motion.section key={index} className="card" {...childStagger}>
             <main className="card-header card-hue" />
-            <motion.main
+            {/* <motion.main
               className="card-image"
               initial={{
                 backgroundImage: "inherit",
@@ -106,14 +106,8 @@ const HeroProject = () => {
               animate={{
                 backgroundImage: `linear-gradient(to bottom, transparent, #1d1d1d), url(${card.src})`,
               }}
-            />
-            <Image
-              width="0"
-              height="0"
-              sizes="600"
-              src={card.src}
-              alt={card.name}
-            />
+            /> */}
+
             <main className="card-body">
               <article>
                 <h1>{card.name}</h1>
