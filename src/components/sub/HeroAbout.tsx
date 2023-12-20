@@ -35,11 +35,7 @@ const HeroAbout = () => {
         viewport={{ once: true }}
         className="hero-about"
       >
-        <motion.section
-          style={{
-            opacity,
-          }}
-        >
+        <motion.section>
           <motion.section>
             <Image
               width={0}
