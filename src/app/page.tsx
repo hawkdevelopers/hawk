@@ -1,14 +1,16 @@
-import Hero from "@/components/main/Hero";
-import React from "react";
+import Image from "next/image";
+import styles from "./page.module.css";
+import Hero from "./components/main/hero/Hero";
 
-const page = () => {
+export default function Home() {
   return (
-    <main style={{
-      display: "flex"
-    }}>
+    <main
+      style={{
+        display: "inline-flex",
+        width: "100%",
+      }}
+    >
       <Hero />
     </main>
   );
-};
-
-export default page;
+}
