@@ -8,6 +8,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Hawk // Portfolio",
   description: "Seja Bem vindo(a) dev <3",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    images:
+      "https://ipfs.io/ipfs/QmVcYXVwXNNjrwPcrEeRxyJDLgBsTDUPDCKGCQBKazLmUo",
+    title: "Hawk // Portfolio",
+    description: "Seja Bem vindo(a) dev <3",
+  },
 };
 
 export default function RootLayout({
