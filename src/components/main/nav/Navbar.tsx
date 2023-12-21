@@ -53,6 +53,7 @@ const Navbar = () => {
               }}
             >
               <motion.a
+                aria-label="Social Media"
                 whileHover={{
                   color: "#F4CE14",
 
@@ -76,9 +77,10 @@ const Navbar = () => {
               }}
             >
               <motion.a
-                href="#"
+                aria-label="Social Media"
                 whileHover={{
                   color: "#F4CE14",
+
                   transition: {
                     delay: 0.25,
                     duration: 0.5,
@@ -98,9 +100,10 @@ const Navbar = () => {
               }}
             >
               <motion.a
-                href="#"
+                aria-label="Social Media"
                 whileHover={{
                   color: "#F4CE14",
+
                   transition: {
                     delay: 0.25,
                     duration: 0.5,
