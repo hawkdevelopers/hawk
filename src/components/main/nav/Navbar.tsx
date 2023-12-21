@@ -2,14 +2,39 @@
 import React from "react";
 
 // Motion
-import { motion } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 // Style Sass
 import "./navbar.scss";
 import Link from "next/link";
 
 const Navbar = () => {
+  const [hidden, setHidden] = React.useState<boolean>(false);
+
+  const { scrollY } = useScroll();
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+      return;
+    }
+    setHidden(false);
+  });
+
   return (
-    <motion.header className="navigation">
+    <motion.header
+      variants={{
+        visible: { y: 0 },
+        hidden: {
+          y: "-200%",
+        },
+      }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{
+        delay: 0.25,
+        duration: 0.5,
+      }}
+      className="navigation"
+    >
       <section>
         <div>
           <Link href="/">
