@@ -76,6 +76,8 @@ const HeroAbout = () => {
                     }}
                   >
                     <motion.a
+                      href="#"
+                      aria-label="Social Media"
                       whileHover={{
                         color: "#F4CE14",
 
@@ -84,7 +86,6 @@ const HeroAbout = () => {
                           duration: 0.5,
                         },
                       }}
-                      href="#"
                     >
                       <i className="fa-brands fa-linkedin" />
                     </motion.a>
@@ -100,8 +101,10 @@ const HeroAbout = () => {
                   >
                     <motion.a
                       href="#"
+                      aria-label="Social Media"
                       whileHover={{
                         color: "#F4CE14",
+
                         transition: {
                           delay: 0.25,
                           duration: 0.5,
@@ -122,8 +125,10 @@ const HeroAbout = () => {
                   >
                     <motion.a
                       href="#"
+                      aria-label="Social Media"
                       whileHover={{
                         color: "#F4CE14",
+
                         transition: {
                           delay: 0.25,
                           duration: 0.5,
