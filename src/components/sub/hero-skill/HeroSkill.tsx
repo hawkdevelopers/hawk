@@ -130,6 +130,9 @@ const HeroSkill = () => {
             duration: 0.5,
           },
         }}
+        viewport={{
+          once: true,
+        }}
       >
         Habilidades<span>.</span>
       </motion.h2>
