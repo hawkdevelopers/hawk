@@ -45,7 +45,7 @@ const HeroAbout = () => {
             <h3>Fullstack Developer & UI Designer</h3>
             <p>
               Olá, sou Diego Vinicius, mas muitos me conhecem como Red. Sou o
-              cérebro por trás do projeto &ldquo;Hawk Developer`s&ldquo;, uma
+              cérebro por trás do projeto &ldquo;Hawk Developer&ldquo;, uma
               plataforma dedicada ao ensino de desenvolvimento web. Atualmente,
               trabalho como freelancer, desempenhando os papéis de Desenvolvedor
               Frontend e Designer UX/UI.

@@ -150,6 +150,7 @@ const HeroSkill = () => {
         viewport={{
           once: true,
         }}
+        className="grid-skill"
       >
         {Skill.map((card, index) => (
           <section key={index} className="card">
