@@ -35,6 +35,7 @@ const HeroAbout = () => {
             src="/about-me.webp"
             className="hero-about-image"
             alt="About Image"
+            priority
           />
         </section>
         <section>
