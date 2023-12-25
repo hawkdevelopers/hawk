@@ -6,12 +6,14 @@ import "./hero.scss";
 import HeroSkill from "../../sub/hero-skill/HeroSkill";
 import HeroWelcome from "../../sub/hero-welcome/HeroWelcome";
 import HeroAbout from "../../sub/hero-about/HeroAbout";
+import HeroExperience from "@/components/sub/hero-experience/HeroExperience";
 
 const Hero = () => {
   return (
     <main className="hero">
       <HeroWelcome />
       <HeroAbout />
+      <HeroExperience />
       <HeroSkill />
     </main>
   );
