@@ -156,7 +156,7 @@ const HeroSkill = () => {
             <section>{card.svg}</section>
             <section>
               <article>
-                <h1>{card.title}</h1>
+                <h2>{card.title}</h2>
                 <p>{card.description}</p>
               </article>
             </section>
