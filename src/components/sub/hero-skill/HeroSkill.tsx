@@ -147,6 +147,9 @@ const HeroSkill = () => {
             duration: 0.8,
           },
         }}
+        viewport={{
+          once: true,
+        }}
       >
         {Skill.map((card, index) => (
           <section key={index} className="card">
