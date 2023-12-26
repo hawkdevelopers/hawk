@@ -1,4 +1,4 @@
-"use client";
+
 import React from "react";
 // Framer Motion
 import { AnimatePresence, motion } from "framer-motion";
