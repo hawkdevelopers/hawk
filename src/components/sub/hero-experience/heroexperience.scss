@@ -1,0 +1,74 @@
+:root {
+    --active-element-show-shadow: 0;
+}
+
+main.hero-experience {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 80px;
+    gap: 1.5rem;
+
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 800;
+
+        span {
+            color: #F4CE14;
+        }
+    }
+
+    section {
+        nav {
+            margin-top: 20px;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: inline-flex;
+                flex-direction: column;
+                gap: 40px;
+
+                li {
+                    button {
+                        appearance: none;
+                        border: none;
+                        cursor: pointer;
+                        background-color: transparent;
+                        padding: 0;
+                        margin: 0;
+
+                        font-weight: 600;
+                        font-size: 16px;
+                        list-style: 22px;
+                        color: #5C5B66;
+                        transition: color .25s;
+                    }
+
+                    &.active {
+                        button {
+                            color: #F4CE14;
+
+                            transition: text-shadow 0.5s ease-in-out, color 0.8s ease-in-out;
+                            text-shadow:
+                                0 0 8px #F4CE14,
+                                0 0 40px #F4CE14;
+                         
+                        }
+                    }
+
+                    &:not(.active) {
+                        &:hover {
+                            button {
+                                color: #807E8C;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
