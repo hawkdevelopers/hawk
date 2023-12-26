@@ -29,6 +29,15 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
+        <meta name="author" content="Hawk Developer" />
+        <meta
+          name="description"
+          content="Meu nome é Diego, desenvolvo interfaces modernas e de alta qualidade, concentrado em performance, animações, responsividade e SEO."
+        />
+        <meta
+          name="keywords"
+          content="sites, web, desenvolvimento, frontend, hawk developer, ui designer, programador, hawk, front-end, designer, ui, hawk, freelancer, freela, website, portfólio"
+        />
         <link
           rel="preload stylesheet"
           as="style"
