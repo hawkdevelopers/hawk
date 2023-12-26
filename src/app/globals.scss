@@ -10,6 +10,8 @@ body {
   background-color: #111;
   color: #F5F7F8;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar {
@@ -31,8 +33,7 @@ body {
 
 * {
   box-sizing: inherit;
-  margin: 0;
-  padding: 0;
+
 
   &:before,
   &:after {
