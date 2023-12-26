@@ -103,7 +103,7 @@ const HeroSkill = () => {
               opacity: 1,
               pathLength: 1,
               transition: {
-                duration: 3,
+                duration: 2,
                 repeatType: "mirror",
               },
             }}
@@ -121,7 +121,7 @@ const HeroSkill = () => {
               opacity: 1,
               pathLength: 1,
               transition: {
-                duration: 3,
+                duration: 2,
                 repeatType: "mirror",
               },
             }}
@@ -139,7 +139,7 @@ const HeroSkill = () => {
               opacity: 1,
               pathLength: 1,
               transition: {
-                duration: 3,
+                duration: 2,
                 repeatType: "mirror",
               },
             }}
