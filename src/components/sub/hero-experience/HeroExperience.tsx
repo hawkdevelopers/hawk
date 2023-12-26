@@ -10,7 +10,7 @@ const HeroExperience = () => {
   const tabs = [
     {
       name: "Stone Finance",
-      position: "Desenvolvedor Senior",
+      position: "Lider de Desenvolvimento",
       description:
         "Desenvolvimento web3, Manutenção de servidores AWS/Local, Docker, Liderança de Equipe, Testes de Aplicação e responsive Mobile",
       date: "Fev 2021 - Presente",
@@ -123,7 +123,7 @@ const HeroExperience = () => {
                 padding: 0,
               }}
             >
-              <h4
+              <h1
                 style={{
                   fontSize: "2.4rem",
                   fontWeight: 400,
@@ -131,7 +131,7 @@ const HeroExperience = () => {
                 }}
               >
                 {tables.name}
-              </h4>
+              </h1>
               <p
                 style={{
                   fontSize: "1.4rem",
@@ -142,7 +142,7 @@ const HeroExperience = () => {
                 {tables.date}
               </p>
             </div>
-            <h5
+            <h2
               style={{
                 fontSize: "2rem",
                 fontWeight: 500,
@@ -151,7 +151,7 @@ const HeroExperience = () => {
               }}
             >
               {tables.position}
-            </h5>
+            </h2>
             <p
               style={{
                 fontSize: "1.4rem",
