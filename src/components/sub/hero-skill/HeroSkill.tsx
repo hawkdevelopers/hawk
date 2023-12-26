@@ -41,7 +41,7 @@ const HeroSkill = () => {
       description:
         "UI/UX Designer especializado em criar interfaces intuitivas, esteticamente atraentes e centradas no usuário para proporcionar experiências digitais funcionais e envolventes.",
       svg: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <motion.path
             ref={scope}
             initial={{ opacity: 0, pathLength: 0 }}
@@ -53,11 +53,12 @@ const HeroSkill = () => {
                 repeatType: "mirror",
               },
             }}
-            strokeWidth={1}
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            d="M12 3H9C7.34315 3 6 4.34315 6 6C6 7.65685 7.34315 9 9 9M12 3V9M12 3H15C16.6569 3 18 4.34315 18 6C18 7.65685 16.6569 9 15 9M12 9H9M12 9H15M12 9V15M9 9C7.34315 9 6 10.3431 6 12C6 13.6569 7.34315 15 9 15M15 9C16.6569 9 18 10.3431 18 12C18 13.6569 16.6569 15 15 15C13.3431 15 12 13.6569 12 12C12 10.3431 13.3431 9 15 9ZM12 15H9M12 15V18C12 19.6569 10.6569 21 9 21C7.34315 21 6 19.6569 6 18C6 16.3431 7.34315 15 9 15"
+            stroke="#F4CE14"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
             className="path-length"
-            d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
           />
         </svg>
       ),
@@ -67,7 +68,7 @@ const HeroSkill = () => {
       description:
         "Designer de Motion Graphics dedicado a criar animações dinâmicas que enriquecem as interfaces, utilizando movimentos criativos para melhorar e dar vida às experiências do usuário de forma cativante.",
       svg: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <motion.path
             ref={scope}
             initial={{ opacity: 0, pathLength: 0 }}
@@ -79,11 +80,12 @@ const HeroSkill = () => {
                 repeatType: "mirror",
               },
             }}
-            strokeWidth={1}
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke="#F4CE14"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
             className="path-length"
-            d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+            d="M22,11H12a1,1,0,0,0-1,1V22a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V12A1,1,0,0,0,22,11ZM21,21H13V13h8ZM2,13a1,1,0,0,1-1-1V2A1,1,0,0,1,2,1H12a1,1,0,0,1,0,2H3v9A1,1,0,0,1,2,13ZM17,6a1,1,0,0,1,0,2H8v9a1,1,0,0,1-2,0V7A1,1,0,0,1,7,6Z"
           />
         </svg>
       ),
@@ -105,11 +107,48 @@ const HeroSkill = () => {
                 repeatType: "mirror",
               },
             }}
-            strokeWidth={1}
-            strokeLinecap="round"
-            strokeLinejoin="round"
             className="path-length"
-            d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 0 0-1.883 2.542l.857 6a2.25 2.25 0 0 0 2.227 1.932H19.05a2.25 2.25 0 0 0 2.227-1.932l.857-6a2.25 2.25 0 0 0-1.883-2.542m-16.5 0V6A2.25 2.25 0 0 1 6 3.75h3.879a1.5 1.5 0 0 1 1.06.44l2.122 2.12a1.5 1.5 0 0 0 1.06.44H18A2.25 2.25 0 0 1 20.25 9v.776"
+            d="M7 8L3 12L7 16"
+            stroke="#F4CE14"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <motion.path
+            ref={scope}
+            initial={{ opacity: 0, pathLength: 0 }}
+            animate={{
+              opacity: 1,
+              pathLength: 1,
+              transition: {
+                duration: 3,
+                repeatType: "mirror",
+              },
+            }}
+            className="path-length"
+            d="M17 8L21 12L17 16"
+            stroke="#F4CE14"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <motion.path
+            ref={scope}
+            initial={{ opacity: 0, pathLength: 0 }}
+            animate={{
+              opacity: 1,
+              pathLength: 1,
+              transition: {
+                duration: 3,
+                repeatType: "mirror",
+              },
+            }}
+            className="path-length"
+            d="M14 4L9.8589 19.4548"
+            stroke="#F4CE14"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
         </svg>
       ),
