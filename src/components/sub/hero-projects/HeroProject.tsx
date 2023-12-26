@@ -147,7 +147,14 @@ const HeroProject = () => {
           }}
           className="hero-content-card"
         >
-          <main></main>
+          <Image
+            width={0}
+            height={0}
+            sizes="100vw"
+            src="/laptop.png"
+            alt="Laptop Image"
+            priority
+          />
         </motion.section>
       </section>
       <motion.a
