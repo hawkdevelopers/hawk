@@ -12,8 +12,15 @@ const HeroTechnology = () => {
     { name: "Javascript", svg: "/javascript.svg" },
     { name: "React", svg: "/react.svg" },
     { name: "Next", svg: "/next.svg" },
+    { name: "Framer", svg: "/framer.svg" },
     { name: "Tailwind", svg: "/tailwind.svg" },
     { name: "Sass", svg: "/sass.svg" },
+    { name: "Node", svg: "/node.svg" },
+    { name: "Docker", svg: "/docker.svg" },
+    { name: "Prisma", svg: "/prisma.svg" },
+    { name: "Mongo", svg: "/mongo.svg" },
+    { name: "AWS", svg: "/aws.svg" },
+    { name: "Go", svg: "/go.svg" },
   ];
 
   const { ref, inView } = useInView({
