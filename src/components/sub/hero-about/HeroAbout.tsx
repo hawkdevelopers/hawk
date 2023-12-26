@@ -76,7 +76,8 @@ const HeroAbout = () => {
                     }}
                   >
                     <motion.a
-                      href="#"
+                      href="https://linkedin.com/in/diego-vinicius-66053a1a3/"
+                      target="_blank"
                       aria-label="Social Media"
                       whileHover={{
                         color: "#F4CE14",
@@ -100,7 +101,8 @@ const HeroAbout = () => {
                     }}
                   >
                     <motion.a
-                      href="#"
+                      href="https://github.com/hawkdevelopers"
+                      target="_blank"
                       aria-label="Social Media"
                       whileHover={{
                         color: "#F4CE14",
@@ -124,7 +126,8 @@ const HeroAbout = () => {
                     }}
                   >
                     <motion.a
-                      href="#"
+                      href="https://www.instagram.com/srvinirox.eth/"
+                      target="_blank"
                       aria-label="Social Media"
                       whileHover={{
                         color: "#F4CE14",

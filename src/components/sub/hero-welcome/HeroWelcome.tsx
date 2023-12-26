@@ -7,10 +7,16 @@ import { gsap } from "gsap";
 // Style Sass
 import "./herowelcome.scss";
 import ButtonWelcome from "../../button-welcome/ButtonWelcome";
+import Image from "next/image";
 
 const HeroWelcome = () => {
   return (
-    <motion.main className="hero-welcome">
+    <motion.main
+      className="hero-welcome"
+      style={{
+        position: "relative",
+      }}
+    >
       <article>
         <motion.h1>
           Ei, me chamo Diego<span>.</span>
