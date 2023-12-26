@@ -11,12 +11,7 @@ import Image from "next/image";
 
 const HeroWelcome = () => {
   return (
-    <motion.main
-      className="hero-welcome"
-      style={{
-        position: "relative",
-      }}
-    >
+    <motion.main className="hero-welcome">
       <article>
         <motion.h1>
           Ei, me chamo Diego<span>.</span>

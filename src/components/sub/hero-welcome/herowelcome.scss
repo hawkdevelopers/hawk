@@ -2,11 +2,11 @@
     width: max-content;
 }
 
-
-
 main.hero-welcome {
-    display: inline-block;
+    display: inline-flex;
+    flex-wrap: wrap;
     width: 100%;
+    gap: 2rem;
 
     &>article {
         display: inline-flex;
