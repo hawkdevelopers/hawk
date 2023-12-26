@@ -19,8 +19,15 @@ main.hero-experience {
     }
 
     section {
+        display: inline-flex;
+        margin-top: 20px;
+        gap: 4rem;
+
         nav {
-            margin-top: 20px;
+            width: 25%;
+            background-color: #F5F7F8;
+            padding: 2rem;
+            border-radius: 8px;
 
             ul {
                 margin: 0;
@@ -48,13 +55,10 @@ main.hero-experience {
 
                     &.active {
                         button {
-                            color: #F4CE14;
+                            color: #111;
 
-                            transition: text-shadow 0.5s ease-in-out, color 0.8s ease-in-out;
-                            text-shadow:
-                                0 0 8px #F4CE14,
-                                0 0 40px #F4CE14;
-                         
+
+
                         }
                     }
 
@@ -68,6 +72,29 @@ main.hero-experience {
                 }
 
 
+            }
+        }
+
+        main {
+            display: inline-block;
+            width: 75%;
+        }
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    main.hero-experience {
+        section {
+            flex-direction: column;
+
+            nav {
+                width: 100%;
+
+            }
+
+            main {
+                width: 100%;
             }
         }
     }
