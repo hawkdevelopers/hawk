@@ -1,0 +1,21 @@
+main.hero-technology {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 80px;
+    gap: 1.5rem;
+
+    &>h2 {
+        font-size: 1.8rem;
+        font-weight: 800;
+
+        span {
+            color: #F4CE14;
+        }
+    }
+
+    .card-technology {
+        display: inline-flex;
+        gap: 2rem;
+    }
+}
